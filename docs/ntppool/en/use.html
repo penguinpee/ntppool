@@ -11,7 +11,7 @@
 
 	<p>
 	The 0, 1, 2 and 3.pool.ntp.org names point to a random set of servers that will
-	change every hour.  Make sure your computer's clock is set to something
+	change every couple of minutes.  Make sure your computer's clock is set to something
 	sensible (within a few minutes of the 'true' time) - you could use <code>ntpdate
 	2.pool.ntp.org</code>, or you could just use the <code>date</code> command and set it
 	to your wristwatch. Start ntpd, and after some time (this could take as long as
@@ -33,7 +33,7 @@
 	[% INCLUDE "ntppool/use/sample-timedatectl.html" %]
 
 	<p>
-	On RedHat et al. (Fedora, CentOS, etc.) <a href="https://chrony.tuxfamily.org/"><code>chronyd</code></a>
+	On some Linux distributions <a href="https://chrony.tuxfamily.org/"><code>chronyd</code></a>
 	has replaced <code>ntpd</code> as the default NTP client (and server). With respect
 	to the time source configuration it uses the same syntax as <code>ntpd</code>,
 	so you can use the example above. Usually, the shipped configuration comes with a
