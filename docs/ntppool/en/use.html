@@ -36,8 +36,9 @@
 	On some Linux distributions <a href="https://chrony.tuxfamily.org/"><code>chronyd</code></a>
 	has replaced <code>ntpd</code> as the default NTP client (and server). With respect
 	to the time source configuration it uses the same syntax as <code>ntpd</code>,
-	so you can use the example above. Usually, the shipped configuration comes with a
-	a sensible default using the distribution's vendor pool and doesn't need any adjusting at all.
+	so you can use the example above, leaving out the <code>tos maxclock</codecode> line.
+	Usually, the shipped configuration comes with a sensible default using the distribution's
+	vendor pool and doesn't need any adjusting at all.
 	For checking on the synchronization status, use <code>chronyc -n sources</code>.
 	The output is similar to <code>ntpq</code> including the asterisk designating
 	the current time source.
